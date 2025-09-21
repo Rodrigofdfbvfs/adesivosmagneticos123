@@ -19,8 +19,8 @@ export function SocialProof() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.id}
-                className={`p-1 ${
-                  index === testimonials.length - 1 ? 'sm:col-span-2 sm:justify-self-center sm:w-1/2' : ''
+                className={`p-1 justify-self-center ${
+                  index === testimonials.length - 1 ? 'sm:col-span-2 sm:w-1/2' : 'w-3/4 sm:w-full'
                 }`}
               >
                 <div className="aspect-[9/16] relative">
@@ -30,7 +30,7 @@ export function SocialProof() {
                     fill
                     className="object-contain rounded-lg"
                     data-ai-hint={testimonial.imageHint}
-                    sizes="(max-width: 640px) 100vw, 50vw"
+                    sizes="(max-width: 640px) 75vw, 50vw"
                   />
                 </div>
               </div>
