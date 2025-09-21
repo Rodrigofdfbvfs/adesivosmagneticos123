@@ -17,7 +17,6 @@ export function VSL() {
               wistia-player[media-id='r6wqgoikwe']:not(:defined) {
                 background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/r6wqgoikwe/swatch');
                 display: block;
-                filter: blur(5px);
                 height: 100%;
                 width: 100%;
                 padding-top: 216.11%;
