@@ -20,6 +20,7 @@ const premiumFeatures = [
   "Acesso vitalício",
   "Figurinhas de sombra",
   "Comunidade no Telegram",
+  "Templates de frases para instagram",
   "Garantia de 7 dias",
 ];
 
