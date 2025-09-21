@@ -20,7 +20,7 @@ export function SocialProof() {
               <div
                 key={testimonial.id}
                 className={`p-1 justify-self-center ${
-                  index === testimonials.length - 1 ? 'sm:col-span-2 sm:w-1/2' : 'w-3/4 sm:w-full'
+                  index === testimonials.length - 1 ? 'sm:col-span-2 sm:w-1/2' : 'w-3/4 sm:w-1/2'
                 }`}
               >
                 <div className="aspect-[9/16] relative">
