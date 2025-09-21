@@ -6,12 +6,12 @@ export function Hero() {
   return (
     <section className="w-full pt-20 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto max-w-[1100px] px-5 text-center">
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-center mb-4">
             <Image
                 src="https://i.imgur.com/rIXDB7D.png"
                 alt="StoryBoost Stickers"
-                width={400}
-                height={150}
+                width={320}
+                height={120}
                 className="rounded-lg"
                 data-ai-hint="sticker collage"
             />
