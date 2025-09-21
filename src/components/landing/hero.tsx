@@ -23,10 +23,11 @@ export function Hero() {
         <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
           Receba acesso imediato, escolha suas figurinhas e publique em segundos.
         </p>
-        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-center gap-2">
           <Button asChild size="lg" className="px-10 py-6 text-lg font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale !text-white uppercase">
             <Link href="#oferta">Quero começar agora</Link>
           </Button>
+          <p className="text-sm text-muted-foreground">por apenas R$ 10,00</p>
         </div>
       </div>
     </section>
