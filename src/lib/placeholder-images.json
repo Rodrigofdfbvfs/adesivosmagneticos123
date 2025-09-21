@@ -1,3 +1,17 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    { "id": "sticker-1", "description": "Promo & CTA", "imageUrl": "https://picsum.photos/seed/sticker1/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-2", "description": "Perguntas", "imageUrl": "https://picsum.photos/seed/sticker2/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-3", "description": "Bastidores", "imageUrl": "https://picsum.photos/seed/sticker3/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-4", "description": "Motivação", "imageUrl": "https://picsum.photos/seed/sticker4/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-5", "description": "Enquetes", "imageUrl": "https://picsum.photos/seed/sticker5/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-6", "description": "Lembretes", "imageUrl": "https://picsum.photos/seed/sticker6/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-7", "description": "Reações", "imageUrl": "https://picsum.photos/seed/sticker7/400/400", "imageHint": "sticker design" },
+    { "id": "sticker-8", "description": "Vendas", "imageUrl": "https://picsum.photos/seed/sticker8/400/400", "imageHint": "sticker design" },
+    { "id": "social-1", "description": "Social proof screenshot 1", "imageUrl": "https://picsum.photos/seed/social1/300/600", "imageHint": "testimonial screenshot" },
+    { "id": "social-2", "description": "Social proof screenshot 2", "imageUrl": "https://picsum.photos/seed/social2/300/600", "imageHint": "testimonial screenshot" },
+    { "id": "social-3", "description": "Social proof screenshot 3", "imageUrl": "https://picsum.photos/seed/social3/300/600", "imageHint": "testimonial screenshot" },
+    { "id": "social-4", "description": "Social proof screenshot 4", "imageUrl": "https://picsum.photos/seed/social4/300/600", "imageHint": "testimonial screenshot" },
+    { "id": "social-5", "description": "Social proof screenshot 5", "imageUrl": "https://picsum.photos/seed/social5/300/600", "imageHint": "testimonial screenshot" }
+  ]
 }

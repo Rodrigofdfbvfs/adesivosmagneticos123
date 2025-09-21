@@ -1,3 +1,29 @@
+import { Hero } from '@/components/landing/hero';
+import { StickerGallery } from '@/components/landing/sticker-gallery';
+import { VSL } from '@/components/landing/vsl';
+import { HowItWorks } from '@/components/landing/how-it-works';
+import { SocialProof } from '@/components/landing/social-proof';
+import { Bonuses } from '@/components/landing/bonuses';
+import { Pricing } from '@/components/landing/pricing';
+import { FAQ } from '@/components/landing/faq';
+import { Footer } from '@/components/landing/footer';
+import { Header } from '@/components/landing/header';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="flex-1">
+        <Hero />
+        <StickerGallery />
+        <VSL />
+        <HowItWorks />
+        <SocialProof />
+        <Bonuses />
+        <Pricing />
+        <FAQ />
+      </main>
+      <Footer />
+    </div>
+  );
 }

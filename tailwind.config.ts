@@ -10,9 +10,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
+        headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
+      },
+      boxShadow: {
+        glow: '0 0 22px 6px hsla(var(--primary), 0.25)',
       },
       colors: {
         background: 'hsl(var(--background))',
