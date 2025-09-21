@@ -1,11 +1,4 @@
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { placeholderImages } from "@/lib/placeholder-images";
 
 export function SocialProof() {
@@ -22,34 +15,27 @@ export function SocialProof() {
             Veja o que nossos clientes estão dizendo sobre o impacto do pack.
           </p>
         </div>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full mt-12"
-        >
-          <CarouselContent>
-            {testimonials.map((testimonial) => (
-              <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <div className="aspect-[9/16] relative">
-                    <Image
-                      src={testimonial.imageUrl}
-                      alt={testimonial.description}
-                      fill
-                      className="object-contain rounded-lg"
-                      data-ai-hint={testimonial.imageHint}
-                      sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 items-start justify-center">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={testimonial.id}
+                className={`p-1 ${
+                  index === testimonials.length - 1 ? 'sm:col-span-2 sm:justify-self-center sm:w-1/2' : ''
+                }`}
+              >
+                <div className="aspect-[9/16] relative">
+                  <Image
+                    src={testimonial.imageUrl}
+                    alt={testimonial.description}
+                    fill
+                    className="object-contain rounded-lg"
+                    data-ai-hint={testimonial.imageHint}
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
                 </div>
-              </CarouselItem>
+              </div>
             ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden sm:flex" />
-          <CarouselNext className="hidden sm:flex" />
-        </Carousel>
+          </div>
       </div>
     </section>
   );
