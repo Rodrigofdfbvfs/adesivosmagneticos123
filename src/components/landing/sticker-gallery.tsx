@@ -18,23 +18,21 @@ export function StickerGallery() {
         </div>
         <div className="mt-12 grid grid-cols-2 gap-6">
           {stickers.map((sticker) => (
-            <Card key={sticker.id} className="overflow-hidden bg-background">
-              <CardContent className="p-0">
-                <div className="aspect-square relative">
-                  <Image
-                    src={sticker.imageUrl}
-                    alt={sticker.description}
-                    fill
-                    className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
-                    data-ai-hint={sticker.imageHint}
-                    sizes="(max-width: 768px) 50vw, 50vw"
-                  />
-                </div>
-              </CardContent>
-              <CardFooter className="p-4 justify-center bg-card">
+            <div key={sticker.id} className="group overflow-hidden">
+              <div className="aspect-square relative bg-transparent">
+                <Image
+                  src={sticker.imageUrl}
+                  alt={sticker.description}
+                  fill
+                  className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+                  data-ai-hint={sticker.imageHint}
+                  sizes="(max-width: 768px) 50vw, 50vw"
+                />
+              </div>
+              <div className="p-4 justify-center bg-transparent">
                 <p className="font-bold text-sm text-center w-full text-foreground">{sticker.description}</p>
-              </CardFooter>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
