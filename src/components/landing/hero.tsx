@@ -10,8 +10,8 @@ export function Hero() {
             <Image
                 src="https://i.imgur.com/rIXDB7D.png"
                 alt="StoryBoost Stickers"
-                width={240}
-                height={90}
+                width={200}
+                height={75}
                 className="rounded-lg"
                 data-ai-hint="sticker collage"
             />
@@ -24,7 +24,7 @@ export function Hero() {
           Receba acesso imediato, escolha suas figurinhas e publique em segundos.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button asChild size="lg" className="px-8 font-bold animate-pulse-scale">
+          <Button asChild size="lg" className="px-8 font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale">
             <Link href="#oferta">Quero começar agora</Link>
           </Button>
         </div>
