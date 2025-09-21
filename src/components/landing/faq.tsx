@@ -35,7 +35,7 @@ export function FAQ() {
     <section id="faq" className="w-full py-14 md:py-20 bg-card/50">
       <div className="container mx-auto max-w-[1100px] px-5">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
             Perguntas Frequentes
           </h2>
         </div>
