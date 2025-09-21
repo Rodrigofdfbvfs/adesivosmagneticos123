@@ -44,6 +44,13 @@ export function Pricing() {
               Mais Vendido
             </Badge>
             <CardHeader className="items-center">
+              <Image
+                src="https://imgur.com/ivzeRIi.png"
+                alt="Pack Premium"
+                width={300}
+                height={300}
+                className="mb-4"
+              />
               <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar.</CardDescription>
               <div className="pt-4">
@@ -51,9 +58,9 @@ export function Pricing() {
               </div>
             </CardHeader>
             <CardContent className="flex-1">
-              <ul className="space-y-3 flex flex-col">
+              <ul className="space-y-3 flex flex-col items-center">
                 {premiumFeatures.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-2">
+                  <li key={index} className="flex items-center gap-2 w-fit">
                     <Check className="w-5 h-5 text-primary" />
                     <span className="text-foreground font-light">{feature}</span>
                   </li>
