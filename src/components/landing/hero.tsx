@@ -10,8 +10,8 @@ export function Hero() {
             <Image
                 src="https://i.imgur.com/rIXDB7D.png"
                 alt="StoryBoost Stickers"
-                width={320}
-                height={120}
+                width={240}
+                height={90}
                 className="rounded-lg"
                 data-ai-hint="sticker collage"
             />
