@@ -23,7 +23,7 @@ export function StickerGallery() {
                   src={sticker.imageUrl}
                   alt={sticker.description}
                   fill
-                  className="object-contain transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105 p-1"
                   data-ai-hint={sticker.imageHint}
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
