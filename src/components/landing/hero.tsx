@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="w-full pt-20 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto max-w-[1100px] px-5 text-center">
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-2">
             <Image
                 src="https://i.imgur.com/7Z2PdPd.png"
                 alt="StoryBoost Stickers"
@@ -26,9 +26,6 @@ export function Hero() {
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button asChild size="lg" className="px-8 font-bold transition-all duration-300 hover:scale-[1.03] hover:shadow-glow">
             <Link href="#oferta">Quero começar agora</Link>
-          </Button>
-          <Button asChild variant="ghost" size="lg" className="border border-primary text-primary hover:bg-primary/10 hover:text-primary px-8 font-bold">
-            <Link href="#vsl">Ver vídeo (VSL)</Link>
           </Button>
         </div>
       </div>
