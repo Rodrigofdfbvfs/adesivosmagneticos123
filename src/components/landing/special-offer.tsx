@@ -53,7 +53,7 @@ export function SpecialOffer() {
               </ul>
             </CardContent>
             <CardFooter className="flex-col gap-4">
-              <Button asChild className="w-full font-bold text-lg animate-pulse-scale">
+              <Button asChild className="w-full font-bold text-lg animate-pulse-scale !text-white">
                 <Link href="#">Sim, quero o Premium por R$ 15,90</Link>
               </Button>
               <Button asChild variant="outline" className="w-full font-bold">
