@@ -39,11 +39,11 @@ export function Pricing() {
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-start lg:gap-12">
           {/* Premium Plan */}
-          <Card className="flex flex-col h-full border-2 border-primary relative shadow-2xl shadow-primary/20">
+          <Card className="flex flex-col h-full border-2 border-primary relative shadow-2xl shadow-primary/20 text-center items-center">
             <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground hover:bg-primary">
               Mais Vendido
             </Badge>
-            <CardHeader>
+            <CardHeader className="items-center">
               <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar.</CardDescription>
               <div className="pt-4">
