@@ -68,7 +68,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white">
+              <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white px-10">
                 <Link href="#">Quero o Premium</Link>
               </Button>
             </CardFooter>
@@ -101,7 +101,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="w-full">
-              <Button asChild className="w-full font-bold text-lg !text-white">
+              <Button asChild className="w-full font-bold text-lg !text-white px-10">
                 <Link href="/oferta-especial">Quero o Básico</Link>
               </Button>
             </CardFooter>
