@@ -40,7 +40,7 @@ export function Pricing() {
               Mais Vendido
             </Badge>
             <CardHeader>
-              <CardTitle>Plano Premium</CardTitle>
+              <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar.</CardDescription>
               <div className="pt-4">
                 <span className="text-5xl font-bold text-primary">R$ 19,90</span>
@@ -66,7 +66,7 @@ export function Pricing() {
           {/* Basic Plan */}
           <Card className="flex flex-col h-full">
             <CardHeader>
-              <CardTitle>Plano Básico</CardTitle>
+              <CardTitle>Pack Básico</CardTitle>
               <CardDescription>Para começar com o essencial.</CardDescription>
               <div className="pt-4">
                 <span className="text-5xl font-bold">R$ 10,00</span>
