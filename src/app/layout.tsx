@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Script from 'next/script';
+import { DateBanner } from '@/components/layout/date-banner';
 
 export const metadata: Metadata = {
   title: 'StoryBoost Stickers',
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Script src="https://fast.wistia.com/player.js" strategy="beforeInteractive" />
       </head>
       <body className="font-body antialiased">
+        <DateBanner />
         {children}
         <Toaster />
       </body>
