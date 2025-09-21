@@ -8,6 +8,7 @@ const basicFeatures = [
   "Figurinhas essenciais",
   "Download imediato",
   "Suporte por e-mail",
+  "Garantia de 7 dias",
 ];
 
 const premiumFeatures = [
