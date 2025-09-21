@@ -8,10 +8,10 @@
     { "id": "sticker-6", "description": "Lembretes", "imageUrl": "https://picsum.photos/seed/sticker6/400/400", "imageHint": "sticker design" },
     { "id": "sticker-7", "description": "Reações", "imageUrl": "https://picsum.photos/seed/sticker7/400/400", "imageHint": "sticker design" },
     { "id": "sticker-8", "description": "Vendas", "imageUrl": "https://picsum.photos/seed/sticker8/400/400", "imageHint": "sticker design" },
-    { "id": "social-1", "description": "Social proof screenshot 1", "imageUrl": "https://picsum.photos/seed/social1/300/600", "imageHint": "testimonial screenshot" },
-    { "id": "social-2", "description": "Social proof screenshot 2", "imageUrl": "https://picsum.photos/seed/social2/300/600", "imageHint": "testimonial screenshot" },
-    { "id": "social-3", "description": "Social proof screenshot 3", "imageUrl": "https://picsum.photos/seed/social3/300/600", "imageHint": "testimonial screenshot" },
-    { "id": "social-4", "description": "Social proof screenshot 4", "imageUrl": "https://picsum.photos/seed/social4/300/600", "imageHint": "testimonial screenshot" },
-    { "id": "social-5", "description": "Social proof screenshot 5", "imageUrl": "https://picsum.photos/seed/social5/300/600", "imageHint": "testimonial screenshot" }
+    { "id": "social-1", "description": "Depoimento de cliente 1", "imageUrl": "https://i.imgur.com/anNiOMY.jpeg", "imageHint": "testimonial screenshot" },
+    { "id": "social-2", "description": "Depoimento de cliente 2", "imageUrl": "https://i.imgur.com/oqLgnj3.jpeg", "imageHint": "testimonial screenshot" },
+    { "id": "social-3", "description": "Depoimento de cliente 3", "imageUrl": "https://i.imgur.com/dPufIUU.jpeg", "imageHint": "testimonial screenshot" },
+    { "id": "social-4", "description": "Depoimento de cliente 4", "imageUrl": "https://i.imgur.com/tG8d9mH.jpeg", "imageHint": "testimonial screenshot" },
+    { "id": "social-5", "description": "Depoimento de cliente 5", "imageUrl": "https://i.imgur.com/ouWdw3B.jpeg", "imageHint": "testimonial screenshot" }
   ]
 }
