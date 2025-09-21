@@ -7,6 +7,7 @@ import { Bonuses } from '@/components/landing/bonuses';
 import { Pricing } from '@/components/landing/pricing';
 import { FAQ } from '@/components/landing/faq';
 import { Footer } from '@/components/landing/footer';
+import { Stickers3D } from '@/components/landing/stickers-3d';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <VSL />
         <StickerGallery />
+        <Stickers3D />
         <HowItWorks />
         <SocialProof />
         <Bonuses />
