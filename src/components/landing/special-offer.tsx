@@ -30,11 +30,11 @@ export function SpecialOffer() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:max-w-xl md:mx-auto">
-          <Card className="flex flex-col h-full border-2 border-primary relative shadow-2xl shadow-primary/20">
+          <Card className="flex flex-col h-full border-2 border-primary relative shadow-2xl shadow-primary/20 text-center items-center">
             <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground hover:bg-primary">
               Oferta Especial
             </Badge>
-            <CardHeader>
+            <CardHeader className="items-center">
               <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar, com desconto.</CardDescription>
               <div className="pt-4">
@@ -52,7 +52,7 @@ export function SpecialOffer() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter className="flex-col gap-4">
+            <CardFooter className="flex-col gap-4 w-full">
               <Button asChild className="w-full font-bold text-lg animate-pulse-scale !text-white">
                 <Link href="#">Sim, quero o Premium por R$ 15,90</Link>
               </Button>
