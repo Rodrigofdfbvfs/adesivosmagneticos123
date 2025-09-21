@@ -15,7 +15,7 @@ export function SocialProof() {
             Veja o que nossos clientes estão dizendo sobre o impacto do pack.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 items-start justify-center">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-2 items-start justify-center">
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.id}
