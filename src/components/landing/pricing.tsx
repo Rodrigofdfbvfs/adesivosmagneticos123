@@ -47,8 +47,8 @@ export function Pricing() {
               <Image
                 src="https://imgur.com/ivzeRIi.png"
                 alt="Pack Premium"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 className="mb-4"
               />
               <CardTitle>Pack Premium</CardTitle>
@@ -58,7 +58,7 @@ export function Pricing() {
               </div>
             </CardHeader>
             <CardContent className="flex-1">
-              <ul className="space-y-3 flex flex-col">
+              <ul className="space-y-3 flex flex-col items-center">
                 {premiumFeatures.map((feature, index) => (
                   <li key={index} className="flex items-center gap-2 w-fit">
                     <Check className="w-5 h-5 text-primary" />
@@ -80,8 +80,8 @@ export function Pricing() {
               <Image
                 src="https://i.imgur.com/AVnLVip.png"
                 alt="Pack Básico"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 className="mb-4"
               />
               <CardTitle>Pack Básico</CardTitle>
