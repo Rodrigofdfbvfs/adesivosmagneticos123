@@ -47,8 +47,8 @@ export function Pricing() {
               <Image
                 src="https://imgur.com/ivzeRIi.png"
                 alt="Pack Premium"
-                width={200}
-                height={200}
+                width={300}
+                height={300}
                 className="mb-4"
               />
               <CardTitle>Pack Premium</CardTitle>
