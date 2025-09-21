@@ -27,7 +27,9 @@ export function Hero() {
           <Button asChild size="lg" className="px-10 py-6 text-lg font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale !text-white uppercase">
             <Link href="#oferta">Quero começar agora</Link>
           </Button>
-          <p className="text-sm text-muted-foreground">por apenas R$ 10,00</p>
+          <p className="text-base text-muted-foreground">
+            por apenas <span className="font-bold">R$ 10,00</span>
+          </p>
         </div>
       </div>
     </section>
