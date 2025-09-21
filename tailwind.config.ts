@@ -91,10 +91,19 @@ export default {
             height: '0',
           },
         },
+        glow: {
+          '0%': {
+            boxShadow: '0 0 0 0 hsla(var(--primary), 0.5)',
+          },
+          '100%': {
+            boxShadow: '0 0 20px 10px transparent',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'glow': 'glow 2s linear infinite',
       },
     },
   },

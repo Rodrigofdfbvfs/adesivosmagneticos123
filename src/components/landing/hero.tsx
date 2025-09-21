@@ -24,7 +24,7 @@ export function Hero() {
           Receba acesso imediato, escolha suas figurinhas e publique em segundos.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button asChild size="lg" className="px-8 font-bold transition-all duration-300 hover:scale-[1.03] hover:shadow-glow">
+          <Button asChild size="lg" className="animate-glow px-8 font-bold transition-all duration-300 hover:scale-[1.03] hover:shadow-glow">
             <Link href="#oferta">Quero começar agora</Link>
           </Button>
         </div>
