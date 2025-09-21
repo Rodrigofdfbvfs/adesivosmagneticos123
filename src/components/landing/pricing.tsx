@@ -69,13 +69,13 @@ export function Pricing() {
 
           {/* Basic Plan */}
           <Card className="flex flex-col h-full">
-            <CardHeader className="items-center text-center">
+            <CardHeader>
               <Image
                 src="https://i.imgur.com/AVnLVip.png"
                 alt="Pack Básico"
-                width={80}
-                height={80}
-                className="mb-2"
+                width={160}
+                height={160}
+                className="mb-4"
               />
               <CardTitle>Pack Básico</CardTitle>
               <CardDescription>Para começar com o essencial.</CardDescription>
