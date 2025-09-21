@@ -12,7 +12,9 @@ const basicFeatures = [
 
 const premiumFeatures = [
   "Todas as figurinhas + premium",
-  "Todos os bônus inclusos",
+  "Bônus: Como perder o medo de gravar vídeo",
+  "Bônus: Como automatizar mensagens no Instagram",
+  "Bônus: Do seu celular à sua primeira venda",
   "Atualizações semanais",
   "Acesso vitalício",
   "Figurinhas de sombra",
