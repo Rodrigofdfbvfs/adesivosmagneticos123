@@ -20,6 +20,7 @@ const premiumFeatures = [
   "Acesso vitalício",
   "Figurinhas de sombra",
   "Comunidade no Telegram",
+  "Garantia de 7 dias",
 ];
 
 export function Pricing() {
