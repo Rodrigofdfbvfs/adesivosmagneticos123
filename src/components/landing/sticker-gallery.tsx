@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { placeholderImages } from "@/lib/placeholder-images";
 
 export function StickerGallery() {
@@ -16,21 +15,18 @@ export function StickerGallery() {
             Figurinhas desenhadas para cada momento da sua estratégia de conteúdo.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-6">
+        <div className="mt-12 grid grid-cols-3 md:grid-cols-6 gap-2">
           {stickers.map((sticker) => (
-            <div key={sticker.id} className="group overflow-hidden">
-              <div className="aspect-square relative bg-transparent">
+            <div key={sticker.id} className="group overflow-hidden bg-transparent">
+              <div className="aspect-square relative">
                 <Image
                   src={sticker.imageUrl}
                   alt={sticker.description}
                   fill
-                  className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
                   data-ai-hint={sticker.imageHint}
-                  sizes="(max-width: 768px) 50vw, 50vw"
+                  sizes="(max-width: 768px) 33vw, 16vw"
                 />
-              </div>
-              <div className="p-4 justify-center bg-transparent">
-                <p className="font-bold text-sm text-center w-full text-foreground">{sticker.description}</p>
               </div>
             </div>
           ))}
