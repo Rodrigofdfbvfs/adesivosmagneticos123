@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const basicFeatures = [
   "Figurinhas essenciais",
@@ -68,7 +69,14 @@ export function Pricing() {
 
           {/* Basic Plan */}
           <Card className="flex flex-col h-full">
-            <CardHeader>
+            <CardHeader className="items-center text-center">
+              <Image
+                src="https://i.imgur.com/AVnLVip.png"
+                alt="Pack Básico"
+                width={80}
+                height={80}
+                className="mb-2"
+              />
               <CardTitle>Pack Básico</CardTitle>
               <CardDescription>Para começar com o essencial.</CardDescription>
               <div className="pt-4">
