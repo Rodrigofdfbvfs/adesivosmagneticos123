@@ -15,7 +15,7 @@ export function StickerGallery() {
             Figurinhas desenhadas para cada momento da sua estratégia de conteúdo.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-0">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-0">
           {stickers.map((sticker) => (
             <div key={sticker.id} className="group overflow-hidden bg-transparent">
               <div className="aspect-square relative">
@@ -23,9 +23,9 @@ export function StickerGallery() {
                   src={sticker.imageUrl}
                   alt={sticker.description}
                   fill
-                  className="object-contain transition-transform duration-300 group-hover:scale-105 p-1"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105 p-0"
                   data-ai-hint={sticker.imageHint}
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
