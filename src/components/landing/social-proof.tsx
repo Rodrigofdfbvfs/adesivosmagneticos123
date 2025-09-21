@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -34,20 +33,16 @@ export function SocialProof() {
             {testimonials.map((testimonial) => (
               <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="aspect-[9/16] relative bg-black">
-                        <Image
-                          src={testimonial.imageUrl}
-                          alt={testimonial.description}
-                          fill
-                          className="object-contain p-2"
-                          data-ai-hint={testimonial.imageHint}
-                          sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
-                        />
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div className="aspect-[9/16] relative">
+                    <Image
+                      src={testimonial.imageUrl}
+                      alt={testimonial.description}
+                      fill
+                      className="object-contain rounded-lg"
+                      data-ai-hint={testimonial.imageHint}
+                      sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
                 </div>
               </CarouselItem>
             ))}
