@@ -16,7 +16,7 @@ export function StickerGallery() {
             Figurinhas desenhadas para cada momento da sua estratégia de conteúdo.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-6">
           {stickers.map((sticker) => (
             <Card key={sticker.id} className="overflow-hidden bg-background">
               <CardContent className="p-0">
@@ -27,7 +27,7 @@ export function StickerGallery() {
                     fill
                     className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
                     data-ai-hint={sticker.imageHint}
-                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    sizes="(max-width: 768px) 50vw, 50vw"
                   />
                 </div>
               </CardContent>
