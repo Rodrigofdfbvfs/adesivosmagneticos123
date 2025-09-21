@@ -93,7 +93,7 @@ export function Pricing() {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="w-full">
               <Button asChild className="w-full font-bold !text-white">
                 <Link href="/oferta-especial">Quero o Básico</Link>
               </Button>
