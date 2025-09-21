@@ -57,7 +57,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow">
+              <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white">
                 <Link href="#">Quero o Premium</Link>
               </Button>
             </CardFooter>
