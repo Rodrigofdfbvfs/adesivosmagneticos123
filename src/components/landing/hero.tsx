@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container mx-auto max-w-[1100px] px-5 text-center">
         <div className="flex justify-center mb-2">
             <Image
-                src="https://i.imgur.com/7Z2PdPd.png"
+                src="https://i.imgur.com/rIXDB7D.png"
                 alt="StoryBoost Stickers"
                 width={400}
                 height={150}
