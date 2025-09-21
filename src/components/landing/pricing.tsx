@@ -34,32 +34,6 @@ export function Pricing() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-start lg:gap-12">
-          {/* Basic Plan */}
-          <Card className="flex flex-col h-full">
-            <CardHeader>
-              <CardTitle>Plano Básico</CardTitle>
-              <CardDescription>Para começar com o essencial.</CardDescription>
-              <div className="pt-4">
-                <span className="text-4xl font-bold">R$ 10,00</span>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <ul className="space-y-3">
-                {basicFeatures.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-            <CardFooter>
-              <Button asChild className="w-full font-bold">
-                <Link href="#">Quero o Básico</Link>
-              </Button>
-            </CardFooter>
-          </Card>
-
           {/* Premium Plan */}
           <Card className="flex flex-col h-full border-2 border-primary relative shadow-2xl shadow-primary/20">
             <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground hover:bg-primary">
@@ -69,7 +43,7 @@ export function Pricing() {
               <CardTitle>Plano Premium</CardTitle>
               <CardDescription>O pacote completo para decolar.</CardDescription>
               <div className="pt-4">
-                <span className="text-4xl font-bold text-primary">R$ 19,90</span>
+                <span className="text-5xl font-bold text-primary">R$ 19,90</span>
               </div>
             </CardHeader>
             <CardContent className="flex-1">
@@ -85,6 +59,32 @@ export function Pricing() {
             <CardFooter>
               <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow">
                 <Link href="#">Quero o Premium</Link>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Basic Plan */}
+          <Card className="flex flex-col h-full">
+            <CardHeader>
+              <CardTitle>Plano Básico</CardTitle>
+              <CardDescription>Para começar com o essencial.</CardDescription>
+              <div className="pt-4">
+                <span className="text-5xl font-bold">R$ 10,00</span>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-1">
+              <ul className="space-y-3">
+                {basicFeatures.map((feature, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <Check className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+            <CardFooter>
+              <Button asChild className="w-full font-bold">
+                <Link href="#">Quero o Básico</Link>
               </Button>
             </CardFooter>
           </Card>
