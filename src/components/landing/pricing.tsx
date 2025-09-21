@@ -68,7 +68,7 @@ export function Pricing() {
           </Card>
 
           {/* Basic Plan */}
-          <Card className="flex flex-col h-full">
+          <Card className="flex flex-col h-full items-center text-center">
             <CardHeader className="items-center text-center">
               <Image
                 src="https://i.imgur.com/AVnLVip.png"
@@ -84,7 +84,7 @@ export function Pricing() {
               </div>
             </CardHeader>
             <CardContent className="flex-1">
-              <ul className="space-y-3">
+              <ul className="space-y-3 flex flex-col items-center">
                 {basicFeatures.map((feature, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <Check className="w-5 h-5 text-primary" />
