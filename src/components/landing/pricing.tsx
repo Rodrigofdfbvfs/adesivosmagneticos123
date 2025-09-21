@@ -73,8 +73,8 @@ export function Pricing() {
               <Image
                 src="https://i.imgur.com/AVnLVip.png"
                 alt="Pack Básico"
-                width={160}
-                height={160}
+                width={200}
+                height={200}
                 className="mb-4"
               />
               <CardTitle>Pack Básico</CardTitle>
