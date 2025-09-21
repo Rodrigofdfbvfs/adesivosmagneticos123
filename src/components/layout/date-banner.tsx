@@ -18,8 +18,8 @@ export function DateBanner() {
   }
 
   return (
-    <div className="bg-[#201119] py-2 text-center text-sm font-bold text-white">
-      Desconto só <span className="text-primary">HOJE</span> nessa página <span className="text-primary">{currentDate}</span>
+    <div className="bg-primary py-2 text-center text-base font-bold text-primary-foreground">
+      Desconto só HOJE nessa página {currentDate}
     </div>
   );
 }
