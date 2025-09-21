@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const premiumFeatures = [
   "Acesso ao drive com muitas figurinhas",
@@ -35,6 +36,13 @@ export function SpecialOffer() {
               Oferta Especial
             </Badge>
             <CardHeader className="items-center">
+              <Image
+                src="https://imgur.com/ivzeRIi.png"
+                alt="Pack Premium"
+                width={300}
+                height={300}
+                className="mb-4"
+              />
               <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar, com desconto.</CardDescription>
               <div className="pt-4">
