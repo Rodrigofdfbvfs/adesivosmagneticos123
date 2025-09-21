@@ -63,3 +63,21 @@
     @apply font-body font-light;
   }
 }
+
+@layer utilities {
+  .animate-glow {
+    animation: glow 2s linear infinite;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px hsla(var(--primary), 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px 5px hsla(var(--primary), 0.5);
+    }
+    100% {
+      box-shadow: 0 0 5px hsla(var(--primary), 0.5);
+    }
+  }
+}
