@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { placeholderImages } from "@/lib/placeholder-images";
 
@@ -15,13 +17,11 @@ export function SocialProof() {
             Veja o que nossos clientes estão dizendo sobre o impacto do pack.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-2 items-start justify-center">
-            {testimonials.map((testimonial, index) => (
+        <div className="mt-12 grid grid-cols-1 gap-3 md:gap-8 justify-center">
+            {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className={`p-1 justify-self-center ${
-                  index === testimonials.length - 1 ? 'sm:col-span-2 sm:w-1/2' : 'w-3/4 sm:w-1/2'
-                }`}
+                className="w-full max-w-sm mx-auto"
               >
                 <div className="aspect-[9/16] relative">
                   <Image
@@ -30,7 +30,7 @@ export function SocialProof() {
                     fill
                     className="object-contain rounded-lg"
                     data-ai-hint={testimonial.imageHint}
-                    sizes="(max-width: 640px) 75vw, 50vw"
+                    sizes="(max-width: 640px) 100vw, 33vw"
                   />
                 </div>
               </div>
