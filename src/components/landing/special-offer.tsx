@@ -39,15 +39,15 @@ export function SpecialOffer() {
               <Image
                 src="https://imgur.com/ivzeRIi.png"
                 alt="Pack Premium"
-                width={300}
-                height={300}
+                width={250}
+                height={250}
                 className="mb-4"
               />
               <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar, com desconto.</CardDescription>
-              <div className="pt-4">
+              <div className="pt-4 flex flex-col items-center">
                 <span className="text-3xl font-bold line-through text-muted-foreground/80">R$ 19,90</span>
-                <span className="text-5xl font-bold text-primary ml-4">R$ 15,90</span>
+                <span className="text-5xl font-bold text-primary">R$ 15,90</span>
               </div>
             </CardHeader>
             <CardContent className="flex-1">
