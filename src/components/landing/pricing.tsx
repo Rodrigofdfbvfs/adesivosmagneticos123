@@ -69,7 +69,7 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
               <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale">
-                <Link href="#">Quero o Premium</Link>
+                <Link href="https://pay.adesivosmagneticos.shop/checkout-white-7085/?add-to-cart=7085">Quero o Premium</Link>
               </Button>
             </CardFooter>
           </Card>
