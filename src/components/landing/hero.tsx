@@ -14,6 +14,7 @@ export function Hero() {
                 height={75}
                 className="rounded-lg"
                 data-ai-hint="sticker collage"
+                priority
             />
         </div>
         <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
