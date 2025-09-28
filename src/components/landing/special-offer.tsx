@@ -1,8 +1,9 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 
 const premiumFeatures = [
@@ -19,6 +20,10 @@ const premiumFeatures = [
 ];
 
 export function SpecialOffer() {
+  const handleRedirect = (url: string) => {
+    window.location.href = url + window.location.search;
+  };
+
   return (
     <section className="w-full py-14 md:py-20">
       <div className="container mx-auto max-w-[1100px] px-5">
@@ -61,11 +66,18 @@ export function SpecialOffer() {
               </ul>
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
-              <Button asChild className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white">
-                <Link href="#">Sim, quero o Premium por R$ 15,90</Link>
+              <Button
+                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7085/?add-to-cart=7085')}
+                className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
+              >
+                Sim, quero o Premium por R$ 15,90
               </Button>
-              <Button asChild variant="outline" className="w-full font-bold">
-                <Link href="https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080">Não, quero apenas o Básico por R$ 10,00</Link>
+              <Button
+                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080')}
+                variant="outline"
+                className="w-full font-bold"
+              >
+                Não, quero apenas o Básico por R$ 10,00
               </Button>
             </CardFooter>
           </Card>

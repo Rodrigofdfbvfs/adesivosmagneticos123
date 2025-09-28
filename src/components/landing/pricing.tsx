@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -26,6 +28,10 @@ const premiumFeatures = [
 ];
 
 export function Pricing() {
+  const handleRedirect = (url: string) => {
+    window.location.href = url + window.location.search;
+  };
+
   return (
     <section id="oferta" className="w-full py-14 md:py-20">
       <div className="container mx-auto max-w-[1100px] px-5">
@@ -50,6 +56,7 @@ export function Pricing() {
                 width={300}
                 height={300}
                 className="mb-4"
+                priority
               />
               <CardTitle>Pack Premium</CardTitle>
               <CardDescription>O pacote completo para decolar.</CardDescription>
@@ -68,8 +75,11 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="w-full">
-              <Button asChild className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale">
-                <Link href="https://pay.adesivosmagneticos.shop/checkout-white-7085/?add-to-cart=7085">Quero o Premium</Link>
+              <Button
+                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7085/?add-to-cart=7085')}
+                className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
+              >
+                Quero o Premium
               </Button>
             </CardFooter>
           </Card>
