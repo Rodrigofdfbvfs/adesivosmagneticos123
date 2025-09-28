@@ -67,7 +67,7 @@ export function SpecialOffer() {
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
               <Button
-                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7085/?add-to-cart=7085')}
+                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7136/?add-to-cart=7136')}
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
               >
                 Sim, quero o Premium por R$ 15,90
