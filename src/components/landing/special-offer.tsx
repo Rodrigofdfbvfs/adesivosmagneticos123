@@ -65,7 +65,7 @@ export function SpecialOffer() {
                 <Link href="#">Sim, quero o Premium por R$ 15,90</Link>
               </Button>
               <Button asChild variant="outline" className="w-full font-bold">
-                <Link href="#">Não, quero apenas o Básico por R$ 10,00</Link>
+                <Link href="https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080">Não, quero apenas o Básico por R$ 10,00</Link>
               </Button>
             </CardFooter>
           </Card>
