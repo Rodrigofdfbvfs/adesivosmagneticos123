@@ -76,7 +76,7 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
               <Button
-                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7085/?add-to-cart=7085')}
+                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7147/?add-to-cart=7147')}
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
               >
                 Quero o Premium
