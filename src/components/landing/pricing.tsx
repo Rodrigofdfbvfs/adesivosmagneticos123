@@ -77,20 +77,10 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
               <Button
-                asChild
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
+                onClick={() => handleRedirect('https://pay.cakto.com.br/tmdmuk9_596873')}
               >
-                <a 
-                  href="https://pay.adesivosmagneticos.shop/checkout-white-7147/?add-to-cart=7147"
-                  target="_blank"
-                  rel="noopener"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7147/?add-to-cart=7147');
-                  }}
-                >
-                  Quero o Premium
-                </a>
+                Quero o Premium
               </Button>
             </CardFooter>
           </Card>
