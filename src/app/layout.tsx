@@ -71,23 +71,9 @@ export default function RootLayout({
             (function () {
               var ua = navigator.userAgent || "";
               var isInApp = /Instagram|FBAN|FBAV|Messenger|Line|TikTok/i.test(ua);
-
-              if (!isInApp) return;
-
-              // Cria modal simples sugerindo abrir no navegador
-              var modal = document.createElement('div');
-              modal.style = "position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:9999";
-              modal.innerHTML = '\\
-                <div style="background:#fff;max-width:460px;width:90%;padding:20px;border-radius:12px;text-align:center;color:#000;">\\
-                  <h3 style="margin:0 0 8px; font-weight: bold; font-size: 1.25rem;">Para pagar com segurança</h3>\\
-                  <p style="margin:0 0 16px">Abra o checkout no seu navegador padrão.</p>\\
-                  <a href="' + window.location.href + '" target="_blank" rel="noopener"\\
-                     style="display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;background:#000;color:#fff;">\\
-                     Abrir no navegador\\
-                  </a>\\
-                </div>';
-
-              document.body.appendChild(modal);
+              if (isInApp) {
+                console.log("In-app browser detectado. Abertura via target _blank no clique do usuário.");
+              }
             })();
           `}
         </Script>
