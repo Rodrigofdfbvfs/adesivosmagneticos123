@@ -20,8 +20,9 @@ const premiumFeatures = [
 ];
 
 export function SpecialOffer() {
-  const handleRedirect = (url: string) => {
-    window.location.href = url + window.location.search;
+  const handleRedirect = (baseUrl: string) => {
+    const url = baseUrl + (window.location.search || '');
+    window.location.href = url;
   };
 
   return (
@@ -67,17 +68,37 @@ export function SpecialOffer() {
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
               <Button
-                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7136/?add-to-cart=7136')}
+                asChild
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
               >
-                Sim, quero o Premium por R$ 15,90
+                <a
+                  href="https://pay.adesivosmagneticos.shop/checkout-white-7136/?add-to-cart=7136"
+                  target="_blank"
+                  rel="noopener"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7136/?add-to-cart=7136');
+                  }}
+                >
+                  Sim, quero o Premium por R$ 15,90
+                </a>
               </Button>
               <Button
-                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080')}
+                asChild
                 variant="outline"
                 className="w-full font-bold"
               >
-                Não, quero apenas o Básico por R$ 10,00
+                <a
+                  href="https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080"
+                  target="_blank"
+                  rel="noopener"
+                   onClick={(e) => {
+                    e.preventDefault();
+                    handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080');
+                  }}
+                >
+                  Não, quero apenas o Básico por R$ 10,00
+                </a>
               </Button>
             </CardFooter>
           </Card>

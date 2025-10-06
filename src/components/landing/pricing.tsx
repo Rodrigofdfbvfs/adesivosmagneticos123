@@ -28,8 +28,9 @@ const premiumFeatures = [
 ];
 
 export function Pricing() {
-  const handleRedirect = (url: string) => {
-    window.location.href = url + window.location.search;
+  const handleRedirect = (baseUrl: string) => {
+    const url = baseUrl + (window.location.search || '');
+    window.location.href = url;
   };
 
   return (
@@ -76,10 +77,20 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
               <Button
-                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7147/?add-to-cart=7147')}
+                asChild
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
               >
-                Quero o Premium
+                <a 
+                  href="https://pay.adesivosmagneticos.shop/checkout-white-7147/?add-to-cart=7147"
+                  target="_blank"
+                  rel="noopener"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7147/?add-to-cart=7147');
+                  }}
+                >
+                  Quero o Premium
+                </a>
               </Button>
             </CardFooter>
           </Card>
