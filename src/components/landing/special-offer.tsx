@@ -76,7 +76,7 @@ export function SpecialOffer() {
               <Button
                 variant="outline"
                 className="w-full font-bold"
-                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080')}
+                onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=TbAqiR')}
               >
                 Não, quero apenas o Básico por R$ 10,00
               </Button>
