@@ -21,7 +21,7 @@ const premiumFeatures = [
 
 export function SpecialOffer() {
   const handleRedirect = (baseUrl: string) => {
-    const url = baseUrl + (window.location.search || '');
+    const url = baseUrl + (window.location.search ? (baseUrl.includes('?') ? '&' : '?') + window.location.search.substring(1) : '');
     window.location.href = url;
   };
 
@@ -67,38 +67,18 @@ export function SpecialOffer() {
               </ul>
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
-              <Button
-                asChild
+               <Button
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
+                onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=h1bQsJ')}
               >
-                <a
-                  href="https://pay.adesivosmagneticos.shop/checkout-white-7136/?add-to-cart=7136"
-                  target="_blank"
-                  rel="noopener"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7136/?add-to-cart=7136');
-                  }}
-                >
-                  Sim, quero o Premium por R$ 15,90
-                </a>
+                Sim, quero o Premium por R$ 15,90
               </Button>
               <Button
-                asChild
                 variant="outline"
                 className="w-full font-bold"
+                onClick={() => handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080')}
               >
-                <a
-                  href="https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080"
-                  target="_blank"
-                  rel="noopener"
-                   onClick={(e) => {
-                    e.preventDefault();
-                    handleRedirect('https://pay.adesivosmagneticos.shop/checkout-white-7080/?add-to-cart=7080');
-                  }}
-                >
-                  Não, quero apenas o Básico por R$ 10,00
-                </a>
+                Não, quero apenas o Básico por R$ 10,00
               </Button>
             </CardFooter>
           </Card>
