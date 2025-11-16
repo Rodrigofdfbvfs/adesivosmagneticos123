@@ -18,7 +18,7 @@ export function Hero() {
             />
         </div>
         <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-          Deixe seus Stories irresistíveis — pack pensado para{" "}
+          Deixe seus Stories irresistíveis. pack pensado para{" "}
           <span className="text-primary">criar conexão e vender.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
