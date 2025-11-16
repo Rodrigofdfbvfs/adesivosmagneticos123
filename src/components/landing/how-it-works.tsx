@@ -29,7 +29,7 @@ export function HowItWorks() {
     <section className="w-full py-14 md:py-20 bg-card/50">
       <div className="container mx-auto max-w-[1100px] px-5">
         <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
                 Comece a usar em 4 passos simples
             </h2>
         </div>

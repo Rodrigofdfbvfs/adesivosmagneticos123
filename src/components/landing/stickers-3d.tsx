@@ -6,7 +6,7 @@ export function Stickers3D() {
       <div className="container mx-auto max-w-[1100px] px-5 py-10 md:py-16">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="text-center md:text-left">
-            <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
               Você também terá acesso às{" "}
               <span className="text-primary">Figurinhas 3D</span>
             </h2>

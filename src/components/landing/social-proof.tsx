@@ -10,7 +10,7 @@ export function SocialProof() {
     <section className="w-full py-14 md:py-20">
       <div className="container mx-auto max-w-[1100px] px-5">
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             Quem usa, aprova
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
