@@ -17,7 +17,7 @@ export function Hero() {
                 priority
             />
         </div>
-        <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
+        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
           Deixe seus Stories irresistíveis. pack pensado para{" "}
           <span className="text-primary">criar conexão e vender.</span>
         </h1>
