@@ -78,7 +78,7 @@ export function Pricing() {
             <CardFooter className="w-full">
               <Button
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
-                onClick={() => handleRedirect('https://pay.cakto.com.br/tmdmuk9_596873')}
+                onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=3UnOc9')}
               >
                 Quero o Premium
               </Button>
