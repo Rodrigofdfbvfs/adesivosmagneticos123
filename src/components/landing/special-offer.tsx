@@ -65,21 +65,17 @@ export function SpecialOffer() {
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
                <Button
-                asChild
+                onClick={() => window.location.href='https://pay.lowify.com.br/checkout?product_id=h1bQsJ'}
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
               >
-                <Link href='https://pay.lowify.com.br/checkout?product_id=h1bQsJ' target="_blank" rel="noopener">
-                  Sim, quero o Premium por R$ 15,90
-                </Link>
+                Sim, quero o Premium por R$ 15,90
               </Button>
               <Button
-                asChild
+                onClick={() => window.location.href='https://pay.lowify.com.br/checkout?product_id=TbAqiR'}
                 variant="outline"
                 className="w-full font-bold"
               >
-                <Link href='https://pay.lowify.com.br/checkout?product_id=TbAqiR' target="_blank" rel="noopener">
-                  Não, quero apenas o Básico por R$ 10,00
-                </Link>
+                Não, quero apenas o Básico por R$ 10,00
               </Button>
             </CardFooter>
           </Card>

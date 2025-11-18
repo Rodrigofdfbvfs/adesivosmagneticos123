@@ -73,12 +73,10 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
               <Button
-                asChild
+                onClick={() => window.location.href='https://pay.lowify.com.br/checkout?product_id=3UnOc9'}
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
               >
-                <Link href='https://pay.lowify.com.br/checkout?product_id=3UnOc9' target="_blank" rel="noopener">
-                  Quero o Premium
-                </Link>
+                Quero o Premium
               </Button>
             </CardFooter>
           </Card>
