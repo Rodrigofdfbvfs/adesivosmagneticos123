@@ -28,10 +28,6 @@ const premiumFeatures = [
 ];
 
 export function Pricing() {
-  const handleRedirect = (baseUrl: string) => {
-    const url = baseUrl + (window.location.search || '');
-    window.location.href = url;
-  };
 
   return (
     <section id="oferta" className="w-full py-14 md:py-20">
@@ -77,10 +73,12 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
               <Button
+                asChild
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
-                onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=3UnOc9')}
               >
-                Quero o Premium
+                <Link href='https://pay.lowify.com.br/checkout?product_id=3UnOc9' target="_blank" rel="noopener">
+                  Quero o Premium
+                </Link>
               </Button>
             </CardFooter>
           </Card>

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const premiumFeatures = [
   "Acesso ao drive com muitas figurinhas",
@@ -20,10 +21,6 @@ const premiumFeatures = [
 ];
 
 export function SpecialOffer() {
-  const handleRedirect = (baseUrl: string) => {
-    const url = baseUrl + (window.location.search ? (baseUrl.includes('?') ? '&' : '?') + window.location.search.substring(1) : '');
-    window.location.href = url;
-  };
 
   return (
     <section className="w-full py-14 md:py-20">
@@ -68,17 +65,21 @@ export function SpecialOffer() {
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
                <Button
+                asChild
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
-                onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=h1bQsJ')}
               >
-                Sim, quero o Premium por R$ 15,90
+                <Link href='https://pay.lowify.com.br/checkout?product_id=h1bQsJ' target="_blank" rel="noopener">
+                  Sim, quero o Premium por R$ 15,90
+                </Link>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 className="w-full font-bold"
-                onClick={() => handleRedirect('https://pay.lowify.com.br/checkout?product_id=TbAqiR')}
               >
-                Não, quero apenas o Básico por R$ 10,00
+                <Link href='https://pay.lowify.com.br/checkout?product_id=TbAqiR' target="_blank" rel="noopener">
+                  Não, quero apenas o Básico por R$ 10,00
+                </Link>
               </Button>
             </CardFooter>
           </Card>
