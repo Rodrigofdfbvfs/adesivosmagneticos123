@@ -28,7 +28,7 @@ export function Hero() {
                     data-ai-hint="sticker collage"
                     priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
             </div>
         </div>
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
