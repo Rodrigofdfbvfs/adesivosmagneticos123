@@ -6,17 +6,28 @@ export function Hero() {
   return (
     <section className="w-full pt-20 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto max-w-[1100px] px-5 text-center">
-        <div className="relative flex justify-center mb-4">
+        <div className="flex flex-col items-center mb-4">
             <Image
-                src="https://i.imgur.com/h4rXQE4.png"
-                alt="StoryBoost Stickers"
-                width={400}
-                height={150}
-                className="rounded-lg"
-                data-ai-hint="sticker collage"
+                src="https://i.imgur.com/rIXDB7D.png"
+                alt="StoryBoost Logo"
+                width={200}
+                height={75}
+                className="mb-4"
+                data-ai-hint="logo"
                 priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+            <div className="relative flex justify-center">
+                <Image
+                    src="https://i.imgur.com/h4rXQE4.png"
+                    alt="StoryBoost Stickers"
+                    width={400}
+                    height={150}
+                    className="rounded-lg"
+                    data-ai-hint="sticker collage"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+            </div>
         </div>
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
           Deixe seus Stories irresistíveis. pack pensado para{" "}
@@ -26,7 +37,11 @@ export function Hero() {
           Receba acesso imediato, escolha suas figurinhas e publique em segundos.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-2">
-          <Button asChild size="lg" className="px-10 py-6 text-lg font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale !text-white uppercase">
+          <Button
+            asChild
+            size="lg"
+            className="px-10 py-6 text-lg font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale !text-white uppercase"
+          >
             <Link href="#oferta">Quero começar agora</Link>
           </Button>
           <p className="text-base text-muted-foreground">
