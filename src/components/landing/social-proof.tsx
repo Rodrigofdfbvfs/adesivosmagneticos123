@@ -86,6 +86,7 @@ export function SocialProof() {
                 />
               ))}
             </div>
+            <p className="text-sm text-muted-foreground mt-2 md:hidden">Arraste para o lado</p>
         </div>
       </div>
     </section>
