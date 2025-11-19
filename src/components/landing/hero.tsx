@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,8 +22,8 @@ export function Hero() {
                 <Image
                     src="https://i.imgur.com/h4rXQE4.png"
                     alt="StoryBoost Stickers"
-                    width={400}
-                    height={150}
+                    width={350}
+                    height={131}
                     className="rounded-lg"
                     data-ai-hint="sticker collage"
                     priority
@@ -38,11 +40,11 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-2">
           <Button
-            asChild
+            onClick={() => window.location.href='#oferta'}
             size="lg"
             className="px-10 py-6 text-lg font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale !text-white uppercase"
           >
-            <Link href="#oferta">Quero começar agora</Link>
+            Quero começar agora
           </Button>
           <p className="text-base text-muted-foreground">
             por apenas <span className="font-bold">R$ 10,00</span>
