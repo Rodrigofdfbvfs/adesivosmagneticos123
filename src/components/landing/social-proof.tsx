@@ -42,7 +42,7 @@ export function SocialProof() {
   };
 
   return (
-    <section className="w-full py-10 md:py-16">
+    <section className="w-full py-10 md:py-10">
       <div className="container mx-auto max-w-[1100px] px-5">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
@@ -86,7 +86,7 @@ export function SocialProof() {
                 />
               ))}
             </div>
-            <p className="text-sm text-muted-foreground mt-2 md:hidden">Arraste para o lado</p>
+            <p className="text-base text-muted-foreground mt-2 md:hidden">Arraste para o lado</p>
         </div>
       </div>
     </section>
