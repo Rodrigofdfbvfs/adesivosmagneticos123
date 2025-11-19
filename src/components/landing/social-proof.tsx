@@ -42,7 +42,7 @@ export function SocialProof() {
   };
 
   return (
-    <section className="w-full py-14 md:py-20">
+    <section className="w-full py-10 md:py-16">
       <div className="container mx-auto max-w-[1100px] px-5">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
