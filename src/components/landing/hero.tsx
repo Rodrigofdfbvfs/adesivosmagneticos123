@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="w-full pt-20 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto max-w-[1100px] px-5 text-center">
-        <div className="flex justify-center mb-4">
+        <div className="relative flex justify-center mb-4">
             <Image
                 src="https://i.imgur.com/h4rXQE4.png"
                 alt="StoryBoost Stickers"
@@ -16,6 +16,7 @@ export function Hero() {
                 data-ai-hint="sticker collage"
                 priority
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
         </div>
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
           Deixe seus Stories irresistíveis. pack pensado para{" "}
