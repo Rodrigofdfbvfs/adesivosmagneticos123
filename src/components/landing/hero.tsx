@@ -22,8 +22,8 @@ export function Hero() {
                 <Image
                     src="https://i.imgur.com/h4rXQE4.png"
                     alt="StoryBoost Stickers"
-                    width={350}
-                    height={131}
+                    width={380}
+                    height={142}
                     className="rounded-lg"
                     data-ai-hint="sticker collage"
                     priority
