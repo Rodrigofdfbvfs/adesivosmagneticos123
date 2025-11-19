@@ -70,8 +70,8 @@ export function SocialProof() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden sm:flex"/>
-              <CarouselNext className="hidden sm:flex"/>
+              <CarouselPrevious />
+              <CarouselNext />
             </Carousel>
              <div className="flex justify-center gap-2 mt-4">
               {testimonials.map((_, index) => (
