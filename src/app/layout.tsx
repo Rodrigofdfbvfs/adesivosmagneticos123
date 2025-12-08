@@ -41,7 +41,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
-        <link data-site-id="141" rel="stylesheet" href="https://cdn-assets.short.gy/styles.css" />
         <Script src="https://fast.wistia.com/player.js" strategy="beforeInteractive" />
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
@@ -74,6 +73,7 @@ export default function RootLayout({
           async
           defer
         ></Script>
+        <script data-site-id="141" src="https://cdn-assets.short.gy/styles.css"></script>
       </head>
       <body className="font-body antialiased">
         <noscript>
