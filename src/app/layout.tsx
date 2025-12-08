@@ -41,6 +41,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
+        <link data-site-id="141" rel="stylesheet" href="https://cdn-assets.short.gy/styles.css" />
         <Script src="https://fast.wistia.com/player.js" strategy="beforeInteractive" />
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
@@ -66,6 +67,13 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></Script>
       </head>
       <body className="font-body antialiased">
         <noscript>
