@@ -73,7 +73,7 @@ export default function RootLayout({
           async
           defer
         ></Script>
-        <script data-site-id="141" src="https://cdn-assets.short.gy/styles.css"></script>
+        <script data-site-id="142" src="https://cdn-assets.short.gy/styles.css"></script>
       </head>
       <body className="font-body antialiased">
         <noscript>
