@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -5,7 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const faqs = [
   {
@@ -31,6 +32,19 @@ const faqs = [
 ];
 
 export function FAQ() {
+  const handleClick = (url: string) => {
+    const search = window.location.search;
+    if (url.startsWith("#")) {
+        const element = document.getElementById(url.substring(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    } else {
+        const separator = url.includes("?") ? "&" : "?";
+        window.location.href = url + (search ? (url.startsWith("/") ? search : separator + search.substring(1)) : "");
+    }
+  };
+
   return (
     <section id="faq" className="w-full py-14 md:py-20 bg-card/50">
       <div className="container mx-auto max-w-[1100px] px-5">
@@ -52,8 +66,8 @@ export function FAQ() {
           </Accordion>
         </div>
         <div className="mt-12 text-center">
-          <Button asChild size="lg" className="px-8 font-bold transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow">
-            <Link href="#oferta">Quero garantir minha vaga</Link>
+          <Button onClick={() => handleClick("#oferta")} size="lg" className="px-8 font-bold transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow">
+            Quero garantir minha vaga
           </Button>
         </div>
       </div>

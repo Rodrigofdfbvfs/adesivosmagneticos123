@@ -2,9 +2,21 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 
 export function Hero() {
+  const handleClick = (url: string) => {
+    const search = window.location.search;
+    if (url.startsWith("#")) {
+        const element = document.getElementById(url.substring(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    } else {
+        const separator = url.includes("?") ? "&" : "?";
+        window.location.href = url + (search ? (url.startsWith("http") ? separator + search.substring(1) : search) : "");
+    }
+  };
+
   return (
     <section className="w-full pt-20 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto max-w-[1100px] px-5 text-center">
@@ -40,7 +52,7 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-2">
           <Button
-            onClick={() => window.location.href='#oferta'}
+            onClick={() => handleClick('#oferta')}
             size="lg"
             className="px-10 py-6 text-lg font-bold transition-transform duration-300 hover:scale-[1.03] animate-pulse-scale !text-white uppercase"
           >

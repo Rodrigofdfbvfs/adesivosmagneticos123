@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const premiumFeatures = [
   "Acesso ao drive com muitas figurinhas",
@@ -21,6 +20,11 @@ const premiumFeatures = [
 ];
 
 export function SpecialOffer() {
+  const handleClick = (url: string) => {
+    const search = window.location.search;
+    const separator = url.includes("?") ? "&" : "?";
+    window.location.href = url + (search ? (url.startsWith("/") ? search : separator + search.substring(1)) : "");
+  };
 
   return (
     <section className="w-full py-14 md:py-20">
@@ -65,13 +69,13 @@ export function SpecialOffer() {
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
                <Button
-                onClick={() => window.location.href='https://pay.lowify.com.br/checkout?product_id=h1bQsJ'}
+                onClick={() => handleClick('https://pay.lowify.com.br/checkout?product_id=h1bQsJ')}
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
               >
                 Sim, quero o Premium por R$ 15,90
               </Button>
               <Button
-                onClick={() => window.location.href='https://pay.lowify.com.br/checkout?product_id=TbAqiR'}
+                onClick={() => handleClick('https://pay.lowify.com.br/checkout?product_id=TbAqiR')}
                 variant="outline"
                 className="w-full font-bold"
               >

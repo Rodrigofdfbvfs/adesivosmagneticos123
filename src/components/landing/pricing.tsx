@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 
 const basicFeatures = [
@@ -28,6 +27,11 @@ const premiumFeatures = [
 ];
 
 export function Pricing() {
+  const handleClick = (url: string) => {
+    const search = window.location.search;
+    const separator = url.includes("?") ? "&" : "?";
+    window.location.href = url + (search ? (url.startsWith("/") ? search : separator + search.substring(1)) : "");
+  };
 
   return (
     <section id="oferta" className="w-full py-14 md:py-20">
@@ -73,7 +77,7 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
                <Button
-                onClick={() => window.location.href='https://pay.lowify.com.br/checkout?product_id=3UnOc9'}
+                onClick={() => handleClick('https://pay.lowify.com.br/checkout?product_id=3UnOc9')}
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
               >
                 Quero o Premium
@@ -108,7 +112,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter className="w-full">
-              <Button onClick={() => window.location.href='/oferta-especial'} className="w-full font-bold text-lg !text-white px-10">
+              <Button onClick={() => handleClick('/oferta-especial')} className="w-full font-bold text-lg !text-white px-10">
                 Quero o Básico
               </Button>
             </CardFooter>
