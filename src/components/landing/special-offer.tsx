@@ -75,7 +75,7 @@ export function SpecialOffer() {
                 Sim, quero o Premium por R$ 15,90
               </Button>
               <Button
-                onClick={() => handleClick('https://pay.lowify.com.br/checkout?product_id=TbAqiR')}
+                onClick={() => handleClick('https://pay.kiwify.com.br/0moJovo')}
                 variant="outline"
                 className="w-full font-bold"
               >
