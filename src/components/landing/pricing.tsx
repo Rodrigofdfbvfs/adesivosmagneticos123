@@ -77,7 +77,7 @@ export function Pricing() {
             </CardContent>
             <CardFooter className="w-full">
                <Button
-                onClick={() => handleClick('https://pay.lowify.com.br/checkout?product_id=3UnOc9')}
+                onClick={() => handleClick('https://pay.kiwify.com.br/XkcdAvd')}
                 className="w-full font-bold text-lg transition-transform duration-300 hover:scale-[1.03] hover:shadow-glow !text-white py-7 animate-pulse-scale"
               >
                 Quero o Premium
