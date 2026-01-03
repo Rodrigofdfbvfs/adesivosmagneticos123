@@ -23,7 +23,7 @@ export function SpecialOffer() {
   const handleClick = (url: string) => {
     const search = window.location.search;
     const separator = url.includes("?") ? "&" : "?";
-    window.location.href = url + (search ? (url.startsWith("/") ? search : separator + search.substring(1)) : "");
+    window.location.href = url + (search ? (url.startsWith("http") ? separator + search.substring(1) : search) : "");
   };
 
   return (
@@ -69,7 +69,7 @@ export function SpecialOffer() {
             </CardContent>
             <CardFooter className="flex-col gap-4 w-full">
                <Button
-                onClick={() => handleClick('https://pay.lowify.com.br/checkout?product_id=h1bQsJ')}
+                onClick={() => handleClick('https://pay.kiwify.com.br/iVK4v9J')}
                 className="w-full font-bold text-base md:text-lg animate-pulse-scale !text-white"
               >
                 Sim, quero o Premium por R$ 15,90
